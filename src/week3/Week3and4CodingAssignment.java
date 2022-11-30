@@ -41,11 +41,13 @@ for (String n : namesArray) {
 System.out.println(space);
 		
 //How do you access the last element of any array?
-	//The last element in any array can be located using the index, nameOfArray.length-1. 
-	//This is because the index always starts at [0], so the last number of the index will always be length-1.
+
+//The last element in any array can be located using the index, nameOfArray.length-1. 
+//This is because the index always starts at [0], so the last number of the index will always be length-1.
 		
 //How do you access the first element of any array?	
-		//Using the index [0], this will always be the first element of an array.
+
+//Using the index [0], this will always be the first element of an array.
 
 //Create a new array of int called nameLengths. Write a loop to iterate over the previously 
 //created names array and add the length of each name to the nameLengths array.
@@ -75,22 +77,21 @@ System.out.println(repeatWord ("Hello",3));
 
 System.out.println(firstAndLastName ("Nicole","Paulson"));
 
-System.out.println(isSumGreaterThan100 (agesArray));
+System.out.println("The sum is greater than 100: " +isSumGreaterThan100 (agesArray));
+
 double [] doubleArray2 = {1.25, 27.33, 4.68, 7.53, 10.20};
 double [] doubleArray = {5.12, 12.55, 3.10, 21.45, 15.80};
 System.out.println("This is the average of the first array: " + average(doubleArray));
 System.out.println("This is the average of the second array: " +average(doubleArray2));
-//double [] doubleArray2 = {1.25, 27.33, 4.68, 7.53, 10.20};
-System.out.println("First average method: " +isAverageFirstArrayGreater(doubleArray, doubleArray2));
-System.out.println("Second average method: " +isAverageFirstArrayGreater2(doubleArray, doubleArray2));
 
-System.out.println(willBuyDrink(true, 8.25));
+System.out.println("First average method is greater: " +isAverageFirstArrayGreater(doubleArray, doubleArray2));
 
-String [] badBoy = {"Pooped inside", "Laying on dinner table", "Chewed Mom and Dads things"};
-String [] goodBoy = {"Slept while we were gone.", "Pooped on his walk."};
-System.out.println(isGoodDog(badBoy));
-System.out.println(isGoodDog(goodBoy));
 
+System.out.println("I will buy a drink: " +willBuyDrink(true, 8.25));
+
+double [] isTotalInBudget = {135.50, 56.75, 299.99, 22.50, 5.75};
+
+System.out.print("In my budget this month: " + buyHouseSupplies(isTotalInBudget)); 
 
 
 	}//end of main method, methods will go below 
@@ -159,19 +160,16 @@ public static boolean willBuyDrink (boolean isHotOutside, double moneyInPocket) 
 //Create a method of your own that solves a problem. In comments, write what the method does 
 //and why you created it.
 
-//Create a method called isGoodDog that takes an array of strings and 
-//returns true if all of the elements in the array are absent. Print the results to the console. 
-//I created this method because it's very relateable to my life lately with our puppy Sonny. 
-//We never know what we will come home to, but we love him!
-public static String isGoodDog (String [] badBoy) {
-	for (String phrases : badBoy) {
-		if (phrases.toLowerCase().contains ("Pooped inside") || phrases.toLowerCase().contains ("Laying on dinner table") 
-				|| phrases.toLowerCase().contains(("Chewed Mom and Dads things"))) {	
-		return "Sonny was a bad boy.";}}
-	return "Sonny was a good boy.";
-		
-		
+//Create a method called buyHouseSupplies that takes an array of double and 
+//returns whether or not you can afford to buy the supplies/if it fits within your monthly 
+//budget of $500. Print the results to the console. 
+//I created this method because it's very relateable to my life lately with moving. I've been 
+//going a crazy and a monthly budget is not a bad idea. 
+
+public static boolean buyHouseSupplies (double [] isTotalInBudget) {
+	double sum = 0;
+	for (double numbers : isTotalInBudget) { 
+		sum += numbers;
+	}	return sum <=500;
 	
-	
-}
-}
+}}
