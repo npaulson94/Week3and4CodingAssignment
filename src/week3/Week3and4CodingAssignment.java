@@ -5,23 +5,26 @@ public class Week3and4CodingAssignment {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
-//Programmatically subtract the value of the first element in the array from the value in the last element of the array (i.e. do not use ages[7] in your code). Print the result to the console.  
-//Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
-//Use a loop to iterate through the array and calculate the average age. Print the result to the console.
-	int [] agesArray = {3,9,23,64,2,8,28,95};
+//Programmatically subtract the value of the first element in the array from the value in the 
+//last element of the array (i.e. do not use ages[7] in your code). Print the result to the console.  
+//Add a new age to your array and repeat the step above to ensure it is dynamic 
+//(works for arrays of different lengths). Use a loop to iterate through the array and 
+//calculate the average age. Print the result to the console.
+	int [] agesArray = {3,9,23,64,2,8,28,105};
 		int firstNum = agesArray[0];
 		int lastNum = agesArray[agesArray.length-1];
-			System.out.println(lastNum-firstNum);
+			System.out.println("The first number subtracted from the last number is: " + (lastNum-firstNum));
 		
 		
 		int sum = 0;
 		for (int ages : agesArray) {
 		sum += ages;
 		}
-		System.out.println(sum / agesArray.length);
+		System.out.println("The average is: " +(sum / agesArray.length));
 		
 //Create an array of String called names that contains the following values: “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”.
-//Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
+//Use a loop to iterate through the array and calculate the average number of letters per name. 
+//Print the result to the console.
 
 String [] namesArray = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
 	double sumNamesLength = 0;
@@ -29,7 +32,7 @@ String [] namesArray = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
 		sumNamesLength += n.length();
 
 	}
-		System.out.println(sumNamesLength / namesArray.length);
+		System.out.println("Average number of letters per name: " +sumNamesLength / namesArray.length);
 		
 //Use a loop to iterate through the array again and concatenate all the names together, 
 //separated by spaces, and print the result to the console.	
@@ -47,7 +50,7 @@ System.out.println(space);
 		
 //How do you access the first element of any array?	
 
-//Using the index [0], this will always be the first element of an array.
+//Using the index nameOfArray[0], this will always be the first element of an array.
 
 //Create a new array of int called nameLengths. Write a loop to iterate over the previously 
 //created names array and add the length of each name to the nameLengths array.
@@ -87,9 +90,9 @@ System.out.println("This is the average of the second array: " +average(doubleAr
 System.out.println("First average method is greater: " +isAverageFirstArrayGreater(doubleArray, doubleArray2));
 
 
-System.out.println("I will buy a drink: " +willBuyDrink(true, 8.25));
+System.out.println("I will buy a drink: " +willBuyDrink(true, 11));
 
-double [] isTotalInBudget = {135.50, 56.75, 299.99, 22.50, 5.75};
+double [] isTotalInBudget = {135.50, 56.75, 111, 22.50, 100};
 
 System.out.print("In my budget this month: " + buyHouseSupplies(isTotalInBudget)); 
 
@@ -168,8 +171,8 @@ public static boolean willBuyDrink (boolean isHotOutside, double moneyInPocket) 
 
 public static boolean buyHouseSupplies (double [] isTotalInBudget) {
 	double sum = 0;
-	for (double numbers : isTotalInBudget) { 
-		sum += numbers;
+	for (double prices : isTotalInBudget) { 
+		sum += prices;
 	}	return sum <=500;
 	
 }}
