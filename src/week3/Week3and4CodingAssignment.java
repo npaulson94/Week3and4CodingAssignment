@@ -4,6 +4,12 @@ public class Week3and4CodingAssignment {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+//URL to GitHub Repository: https://github.com/npaulson94/Week3and4CodingAssignment.git
+		
+//URL to Public Link of your Video: https://youtu.be/Z6fc3p4gNfI
+		
+		
 //Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 //Programmatically subtract the value of the first element in the array from the value in the 
 //last element of the array (i.e. do not use ages[7] in your code). Print the result to the console.  
@@ -92,7 +98,7 @@ System.out.println("First average method is greater: " +isAverageFirstArrayGreat
 
 System.out.println("I will buy a drink: " +willBuyDrink(true, 11));
 
-double [] isTotalInBudget = {135.50, 56.75, 111, 22.50, 100};
+double [] isTotalInBudget = {135.50, 56.75, 111, 22.50, 299.99};
 
 System.out.print("In my budget this month: " + buyHouseSupplies(isTotalInBudget)); 
 
